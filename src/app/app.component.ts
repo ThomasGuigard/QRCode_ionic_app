@@ -1,3 +1,4 @@
+import { QrCodeReadPage } from './../pages/qr-code-read/qr-code-read';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -21,8 +22,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Générer un QrCode', component: HomePage },
+      { title: 'Lire un QrCode', component: QrCodeReadPage },
+      { title: 'Historique des QrCode', component: ListPage },
     ];
 
   }
