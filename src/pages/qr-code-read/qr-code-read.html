@@ -10,7 +10,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Lire un QrCode</ion-title>
+    <ion-title>Décoder un QrCode</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,8 +19,8 @@
 
 <ion-content padding>
   
-  <button ion-button block>Charger un fichier</button>
-  <button ion-button block (click)="readQrCode()" >Prendre une photo</button>
+  <button ion-button block disabled>Charger un fichier</button>
+  <button ion-button block (click)="readQrCode()" >Scanner un QrCode</button>
 
   <p>{{decodedData}}</p>
 

@@ -9,11 +9,15 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items">      
-      <h3>{{item.title}}</h3>
-      <div class="item-note" item-end>
-        {{item.date | date:'short'}}
-      </div>
-    </ion-item>
+    <ion-card *ngFor="let item of items">      
+      <ion-card-header>
+          <h3>{{item.title}}</h3>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="item-note" item-end>
+          {{item.date | date:'short'}}
+        </div>
+      </ion-card-content>
+    </ion-card>
   </ion-list>
 </ion-content>
